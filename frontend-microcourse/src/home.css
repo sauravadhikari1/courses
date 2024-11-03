@@ -1,0 +1,136 @@
+/* Main Container */
+.home {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: 'Roboto', sans-serif; /* Use a more modern sans-serif font */
+    background: linear-gradient(135deg, #e0eafc, #cfd9df); /* Subtle gradient for a techy feel */
+    border-radius: 12px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.home h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #1a202c;
+    margin-bottom: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #1e90ff, #ff7f50);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Makes the gradient text visible */
+    text-shadow: 0 4px 8px rgba(0, 150, 255, 0.3);
+    animation: glow 3s ease-in-out infinite;
+}
+
+/* Glow effect animation */
+@keyframes glow {
+    0%, 100% {
+        text-shadow: 0 4px 8px rgba(0, 150, 255, 0.3), 0 0 15px rgba(255, 127, 80, 0.2);
+    }
+    50% {
+        text-shadow: 0 4px 8px rgba(0, 150, 255, 0.5), 0 0 25px rgba(255, 127, 80, 0.4);
+    }
+}
+
+
+/* Course List */
+.course-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+    justify-content: center;
+}
+
+/* Course Card */
+.course-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.15);
+    padding: 25px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #1a202c;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Course Image */
+.course-image {
+    border-radius: 8px;
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+
+.course-card img {
+    height: 100px;
+    width: auto;
+}
+
+/* Course Title */
+.course-title {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin: 10px 0;
+    color: #2b6cb0;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Course Description */
+.course-description {
+    color: #4a5568;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+/* Duration Text */
+.course-duration {
+    font-weight: bold;
+    color: #2f855a;
+    margin-top: 10px;
+}
+
+/* View Details Link */
+.course-link {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #ff7f50;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0px 4px 8px rgba(255, 127, 80, 0.4);
+    margin-top: 15px;
+}
+
+.course-link:hover {
+    background-color: #ff6347;
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(255, 99, 71, 0.5);
+}
+
+/* Additional Styling for Vibrancy */
+.course-title {
+    color: #2b6cb0;
+}
+
+.course-description {
+    color: #4a5568;
+}
+
+.course-duration {
+    color: #2f855a;
+}

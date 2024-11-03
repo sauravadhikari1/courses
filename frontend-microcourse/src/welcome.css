@@ -1,0 +1,64 @@
+/* Container styling with the background image */
+.welcome-container {
+    background-image: url('img.jpg'); /* Update this path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+  }
+  
+  /* Card styling with semi-transparent background */
+  .welcome-card {
+    background-color: rgba(0, 0, 0, 0.7); /* Dark, semi-transparent background */
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 600px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px); /* Slight blur for a frosted glass effect */
+  }
+  
+  /* Title styling */
+  .welcome-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 150, 255, 0.7); /* Soft blue glow */
+  }
+  
+  /* Text styling */
+  .welcome-text {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    color: #e0e0e0;
+  }
+  
+  /* Button styling */
+  .view-courses-button {
+    padding: 12px 25px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: orange; /* Bright blue */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 150, 255, 0.5);
+  }
+  
+  .view-courses-button:hover {
+    background-color: #0a74d4; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight grow on hover */
+  }
+  
+  .view-courses-button:active {
+    background-color: #0a74d4;
+    transform: scale(0.98); /* Slight shrink on click */
+  }
+  

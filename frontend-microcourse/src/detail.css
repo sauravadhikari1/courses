@@ -1,0 +1,168 @@
+/* Ensure all class names are scoped with .course-detail */
+
+
+.course-detail-wrapper {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(38, 40, 59, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    color: #e0e0ff;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .course-detail-title {
+    font-size: 2.5rem;
+    color: #9b59b6;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  .course-detail-image {
+    max-width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    box-shadow: 0 4px 20px rgba(155, 89, 182, 0.3);
+  }
+  
+  .course-detail-image.animate {
+    transform: scale(1.05);
+    box-shadow: 0 8px 24px rgba(155, 89, 182, 0.5);
+  }
+  
+  .course-detail-description,
+  .course-detail-instructor,
+  .course-detail-duration {
+    color: #d8bfd8;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 10px 0;
+  }
+  
+  .course-detail-enroll-button {
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background: linear-gradient(135deg, #9b59b6, #8e44ad);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .course-detail-enroll-button:hover {
+    background: linear-gradient(135deg, #8e44ad, #9b59b6);
+    transform: translateY(-3px);
+  }
+  
+  .course-detail-enroll-button:active {
+    transform: scale(0.98);
+  }
+  
+  .course-detail-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .course-detail-enrollment-form {
+    background: rgba(48, 50, 70, 0.95);
+    padding: 30px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    text-align: left;
+    animation: slideIn 0.3s ease;
+    color: #e0e0ff;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .course-detail-enrollment-form h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #9b59b6;
+    text-align: center;
+  }
+  
+  .course-detail-enrollment-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #d8bfd8;
+  }
+  
+  .course-detail-enrollment-form input[type="text"],
+  .course-detail-enrollment-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    border: 1px solid #d8bfd8;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #e0e0ff;
+    transition: border-color 0.3s ease;
+  }
+  
+  .course-detail-enrollment-form input[type="text"]:focus,
+  .course-detail-enrollment-form input[type="email"]:focus {
+    border-color: #9b59b6;
+    outline: none;
+  }
+  
+  .course-detail-submit-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    background: linear-gradient(135deg, #9b59b6, #8e44ad);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin-right: 10px;
+  }
+  
+  .course-detail-submit-button:hover {
+    background: linear-gradient(135deg, #8e44ad, #9b59b6);
+    transform: scale(1.05);
+  }
+  
+  .course-detail-close-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #e0e0ff;
+    background: rgba(48, 50, 70, 0.8);
+    border: 1px solid #d8bfd8;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .course-detail-close-button:hover {
+    background: rgba(48, 50, 70, 1);
+    transform: scale(1.05);
+  }
+  
